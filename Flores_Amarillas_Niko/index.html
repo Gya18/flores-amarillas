@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#fff8d8" />
+  <title>Para mi Niko 💛</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="petalLayer" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bloom" aria-hidden="true">🌻</div>
+      <p class="kicker">21 de septiembre · para mi Niko</p>
+      <h1>Hoy tenía que darte<br><span>flores amarillas…</span></h1>
+      <p class="lead">pero siendo un <strong>Niko de TI</strong> tenía que hacerlo a mi manera. 💛</p>
+      <button class="primary" id="startBtn">Abrir mi pequeño jardín</button>
+      <p class="tiny">Pista: toca cada flor.</p>
+    </section>
+
+    <section class="garden hidden" id="jardin">
+      <header class="section-head">
+        <p class="kicker">5 flores · 5 pedacitos de nosotros</p>
+        <h2>Hay cosas que quería recordarte hoy</h2>
+        <p>Cada flor guarda una foto y algo que quiero decirte. Ábrelas en el orden que quieras.</p>
+      </header>
+
+      <div class="flower-grid">
+        <button class="flower-card" data-id="1" aria-label="Abrir flor 1">
+          <span class="bloom">
+            <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span>
+            <span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span>
+            <span class="center"><span class="lock">💛</span><img src="assets/flor1.webp" alt="Un recuerdo de nosotros"></span>
+          </span>
+          <span class="flower-label">Lo que me gusta de ti</span>
+          <span class="status">Toca para descubrir</span>
+        </button>
+
+        <button class="flower-card" data-id="2" aria-label="Abrir flor 2">
+          <span class="bloom">
+            <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span>
+            <span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span>
+            <span class="center"><span class="lock">🎵</span><img src="assets/flor2.webp" alt="Nuestro primer concierto juntos"></span>
+          </span>
+          <span class="flower-label">Nuestro primer concierto</span>
+          <span class="status">Toca para descubrir</span>
+        </button>
+
+        <button class="flower-card" data-id="3" aria-label="Abrir flor 3">
+          <span class="bloom">
+            <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span>
+            <span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span>
+            <span class="center"><span class="lock">✨</span><img src="assets/flor3.webp" alt="Un momento especial juntos"></span>
+          </span>
+          <span class="flower-label">Algo que quizá no digo seguido</span>
+          <span class="status">Toca para descubrir</span>
+        </button>
+
+        <button class="flower-card" data-id="4" aria-label="Abrir flor 4">
+          <span class="bloom">
+            <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span>
+            <span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span>
+            <span class="center"><span class="lock">😅</span><img src="assets/flor4.webp" alt="Otra foto de nosotros"></span>
+          </span>
+          <span class="flower-label">Tengo una confesión</span>
+          <span class="status">Toca para descubrir</span>
+        </button>
+
+        <button class="flower-card" data-id="5" aria-label="Abrir flor 5">
+          <span class="bloom">
+            <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span>
+            <span class="petal p5"></span><span class="petal p6"></span><span class="petal p7"></span><span class="petal p8"></span>
+            <span class="center"><span class="lock">🌟</span><img src="assets/flor5.webp" alt="Un recuerdo de nuestra historia"></span>
+          </span>
+          <span class="flower-label">Una promesa</span>
+          <span class="status">Toca para descubrir</span>
+        </button>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-text"><span id="progressText">0 de 5 flores abiertas</span><span id="progressEmoji">🌱</span></div>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+    </section>
+
+    <section class="luna-section hidden" id="lunaSection">
+      <div class="luna-card">
+        <p class="kicker">Bonus desbloqueado</p>
+        <h2>Pero espera… falta alguien importante.</h2>
+        <p class="luna-intro">Después de abrir las cinco flores aparece la responsable secreta de este proyecto.</p>
+        <button class="rainbow-flower" id="lunaBtn" aria-label="Abrir flor especial de Luna">
+          <span class="rb-petal rp1"></span><span class="rb-petal rp2"></span><span class="rb-petal rp3"></span><span class="rb-petal rp4"></span>
+          <span class="rb-petal rp5"></span><span class="rb-petal rp6"></span><span class="rb-petal rp7"></span><span class="rb-petal rp8"></span>
+          <span class="rb-center">🐾</span>
+        </button>
+        <p class="tiny">Toca la flor de colores</p>
+      </div>
+    </section>
+
+    <section class="ending hidden" id="ending">
+      <div class="ending-card">
+        <img src="assets/luna.webp" alt="Luna, nuestro gato" class="luna-photo">
+        <p class="kicker">Créditos del proyecto 🐾</p>
+        <h2>Todo esto fue posible gracias a Luna.</h2>
+        <p>Supervisora oficial del proyecto, responsable de <strong>0 líneas de código</strong> y del <strong>100% del apoyo emocional</strong>. 🐱💛</p>
+        <div class="divider"></div>
+        <p class="final-message">Feliz día de las flores amarillas, Niko.<br>Te amo mucho. 💛</p>
+        <button class="ghost" id="replayBtn">Volver a ver las flores</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="messageModal">
+    <button class="close" id="closeModal" aria-label="Cerrar">×</button>
+    <div class="modal-photo-wrap"><img id="modalPhoto" alt="Nuestro recuerdo"></div>
+    <p class="kicker" id="modalKicker"></p>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <button class="primary compact" id="nextBtn">Guardar este recuerdo 💛</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
