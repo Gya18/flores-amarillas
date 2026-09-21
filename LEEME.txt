@@ -1,0 +1,8 @@
+FLORES AMARILLAS - NIKO
+
+1. Abre la carpeta.
+2. Haz doble clic en index.html.
+3. Se recomienda Chrome, Edge u Opera.
+4. No necesita Internet: todo funciona en local.
+
+Para compartirla más adelante, puedes subir esta misma carpeta a GitHub Pages.
